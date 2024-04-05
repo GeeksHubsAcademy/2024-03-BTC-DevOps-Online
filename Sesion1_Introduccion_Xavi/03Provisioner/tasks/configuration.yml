@@ -1,0 +1,7 @@
+- name: Update Packages.
+  apt:
+    upgrade: dist
+- name: Install nginx
+  apt: 
+    name: nginx
+    state: present

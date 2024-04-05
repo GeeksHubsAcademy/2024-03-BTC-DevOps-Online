@@ -1,0 +1,9 @@
+- name: Update Packages.
+  apt:
+    upgrade: dist 
+
+- name: Ansible apt install nginx
+  apt:
+    name: nginx
+    state: present
+  become: yes

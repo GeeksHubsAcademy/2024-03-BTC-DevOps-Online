@@ -1,0 +1,23 @@
+{
+    "variables": {
+      "version": "latest",
+      "do_token": "{{env `DO_PAT`}}"
+    },
+    "builders": [{
+      "type": "digitalocean",
+      "api_token": "{{user `do_token`}}",
+      "image": "ubuntu-23-10-x64",
+      "region": "nyc3",
+      "size": "s-1vcpu-1gb",
+      "ssh_username": "root",
+      "droplet_name": "myweb-{{user `version`}}",
+      "snapshot_name": "myweb-{{user `version`}}-{{timestamp}}",
+      "ssh_keypair_name": "XAVI"
+    }],
+    "provisioners": [
+      {
+        "type": "ansible",
+        "playbook_file": "./playbook.yml"
+      }
+    ]
+  }

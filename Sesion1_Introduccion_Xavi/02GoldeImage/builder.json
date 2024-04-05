@@ -1,0 +1,25 @@
+{
+    "variables": {
+      "version": "latest",
+      "do_token": "{{env `DO_PAT`}}"
+    },
+    "builders": [{
+      "type": "digitalocean",
+      "api_token": "{{user `do_token`}}",
+      "image": "ubuntu-23-10-x64",
+      "region": "nyc3",
+      "size": "s-2vcpu-4gb",
+      "ssh_username": "root",
+      "droplet_name": "rocketchat-{{user `version`}}",
+      "snapshot_name": "rocketchat-{{user `version`}}-{{timestamp}}"
+    }],
+    "provisioners": [ {
+      "type": "shell",
+      "inline": [
+        "sleep 20",
+        "apt-get update -y",
+        "snap install rocketchat-server"
+      ]
+    }
+    ]
+  }
