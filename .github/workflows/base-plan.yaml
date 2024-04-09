@@ -34,13 +34,13 @@ jobs:
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - name: Checkout
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
       # Configure aws credentials
       - name: Configure AWS Credentials
         uses: aws-actions/configure-aws-credentials@v2
         with:
-          role-to-assume: ${{ secrets.BASE_ARN_ROLE }}
+          role-to-assume: ${{ secrets.ARN_ROLE }}
           role-session-name: infrastructuresession
           aws-region: eu-west-3
 
