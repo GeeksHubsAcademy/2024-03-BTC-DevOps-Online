@@ -52,21 +52,21 @@ jobs:
         with:
           tf_actions_version: 1.0.2
           tf_actions_subcommand: 'init'
-          tf_actions_working_dir: 'vpc'
+          tf_actions_working_dir: 'Sesion3_Infra_Reinaldo/base/vpc'
           tf_actions_comment: true
       - name: 'Terraform fmt VPC'
         uses: hashicorp/terraform-github-actions@master
         with:
           tf_actions_version: 1.0.2
           tf_actions_subcommand: 'validate'
-          tf_actions_working_dir: 'vpc'
+          tf_actions_working_dir: 'Sesion3_Infra_Reinaldo/base/vpc'
           tf_actions_comment: true
       - name: 'Terraform plan VPC'
         uses: hashicorp/terraform-github-actions@master
         with:
           tf_actions_version: 1.0.2
           tf_actions_subcommand: 'plan'
-          tf_actions_working_dir: 'vpc'
+          tf_actions_working_dir: 'Sesion3_Infra_Reinaldo/base/vpc'
           tf_actions_comment: true
 
       # Runs terraform stack KEY
@@ -75,21 +75,21 @@ jobs:
         with:
           tf_actions_version: 1.0.2
           tf_actions_subcommand: 'init'
-          tf_actions_working_dir: 'key'
+          tf_actions_working_dir: 'Sesion3_Infra_Reinaldo/base/key'
           tf_actions_comment: true
       - name: 'Terraform fmt KEY'
         uses: hashicorp/terraform-github-actions@master
         with:
           tf_actions_version: 1.0.2
           tf_actions_subcommand: 'validate'
-          tf_actions_working_dir: 'key'
+          tf_actions_working_dir: 'Sesion3_Infra_Reinaldo/base/key'
           tf_actions_comment: true
       - name: 'Terraform plan KEY'
         uses: hashicorp/terraform-github-actions@master
         with:
           tf_actions_version: 1.0.2
           tf_actions_subcommand: 'plan'
-          tf_actions_working_dir: 'key'
+          tf_actions_working_dir: 'Sesion3_Infra_Reinaldo/base/key'
           tf_actions_comment: true
 
       # Runs terraform stack ACM
@@ -98,19 +98,19 @@ jobs:
         with:
           tf_actions_version: 1.0.2
           tf_actions_subcommand: 'init'
-          tf_actions_working_dir: 'acm'
+          tf_actions_working_dir: 'Sesion3_Infra_Reinaldo/base/acm'
           tf_actions_comment: true
       - name: 'Terraform fmt ACM'
         uses: hashicorp/terraform-github-actions@master
         with:
           tf_actions_version: 1.0.2
           tf_actions_subcommand: 'validate'
-          tf_actions_working_dir: 'acm'
+          tf_actions_working_dir: 'Sesion3_Infra_Reinaldo/base/acm'
           tf_actions_comment: true
       - name: 'Terraform plan ACM'
         uses: hashicorp/terraform-github-actions@master
         with:
           tf_actions_version: 1.0.2
           tf_actions_subcommand: 'plan'
-          tf_actions_working_dir: 'acm'
+          tf_actions_working_dir: 'Sesion3_Infra_Reinaldo/base/acm'
           tf_actions_comment: true
