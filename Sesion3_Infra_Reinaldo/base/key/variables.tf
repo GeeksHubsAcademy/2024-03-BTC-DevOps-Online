@@ -17,7 +17,7 @@ variable "key_list" {
 ##############
 variable "project" {
   description = "Project name"
-  default     = "tupinflash"
+  default     = "demo"
 }
 variable "application" {
   description = "Application name"
