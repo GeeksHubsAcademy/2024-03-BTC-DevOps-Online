@@ -43,10 +43,10 @@ variable "cant_nat" {
 ## ADD TAGS ##
 ##############
 variable "project" {
-  default = "tupinflash"
+  default = "demo"
 }
 variable "env" {
-  default = "stg"
+  default = "dev"
 }
 variable "creator" {
   default = "DevOps Team"
