@@ -39,7 +39,7 @@ variable "private_zone" {
 ## ADD TAGS ##
 ##############
 variable "project" {
-  default = "tupinflash"
+  default = "demo"
 }
 variable "env" {
   default = "dev"
