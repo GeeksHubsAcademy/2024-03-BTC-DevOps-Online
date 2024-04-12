@@ -6,7 +6,7 @@ variable "region" {
 }
 
 variable "s3_bucket" {
-  default = "terraform-devops-dev"
+  default = "terraform-devops-dev-paris"
 }
 
 variable "azs" {
