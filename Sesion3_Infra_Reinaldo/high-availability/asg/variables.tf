@@ -133,7 +133,7 @@ variable "env" {
 }
 variable "project" {
   description = "Project name"
-  default     = "Masters of Hardcore"
+  default     = "mh"
 }
 variable "creator" {
   description = "Deploymente by"
