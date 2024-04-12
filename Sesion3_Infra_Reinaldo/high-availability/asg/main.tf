@@ -1,6 +1,6 @@
 ################################
 ##CREATE ROLE IAM FOR INSTANCE##
-#################################
+################################
 resource "aws_iam_role" "app_role" {
   name               = "asg-${var.project}-${var.application}-${var.env}"
   assume_role_policy = file("iam-role-app.json")
