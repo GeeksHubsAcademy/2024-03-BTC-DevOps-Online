@@ -2,7 +2,7 @@
 ## REGION ##
 ############
 variable "region" {
-  default = "eu-west-1"
+  default = "eu-west-3"
 }
 
 variable "s3_bucket" {
@@ -10,7 +10,7 @@ variable "s3_bucket" {
 }
 
 variable "azs" {
-  default = ["eu-west-1a", "eu-west-1b"]
+  default = ["eu-west-3a", "eu-west-3b"]
   type    = list(any)
 }
 
@@ -18,7 +18,7 @@ variable "azs" {
 ## AZs CONFIG ALB ##
 ####################
 variable "alb_azs" {
-  default = ["eu-west-1a", "eu-west-1b"]
+  default = ["eu-west-3a", "eu-west-3b"]
   type    = list(any)
 }
 variable "dns_zone_id" {
@@ -109,10 +109,10 @@ variable "stickiness_enabled" {
 ## ASG CAPACITY ##
 ##################
 variable "max_size" {
-  default = "2"
+  default = "1"
 }
 variable "min_size" {
-  default = "2"
+  default = "1"
 }
 variable "desired_capacity" {
   default = "2"
@@ -133,7 +133,7 @@ variable "env" {
 }
 variable "project" {
   description = "Project name"
-  default     = "tupinflash"
+  default     = "Masters of Hardcore"
 }
 variable "creator" {
   description = "Deploymente by"
