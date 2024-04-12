@@ -2,7 +2,7 @@
 ## DEPLOY REGION ##
 ###################
 variable "region" {
-  default = "eu-west-1"
+  default = "eu-west-3"
 }
 
 variable "s3_bucket" {
@@ -51,15 +51,15 @@ variable "app_userdata" {
 ########
 variable "env" {
   description = "Environment type"
-  default     = "stg"
+  default     = "dev"
 }
 variable "project" {
   description = "Project name"
-  default     = "tupinflash"
+  default     = "cs2"
 }
 variable "creator" {
   description = "Deploymente by"
-  default     = "DevOps Team"
+  default     = "Super Mega DevOps Team"
 }
 variable "application" {
   description = "Deploymente by"

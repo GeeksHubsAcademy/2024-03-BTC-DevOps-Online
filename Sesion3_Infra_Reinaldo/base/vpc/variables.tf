@@ -2,7 +2,7 @@
 ## DEPLOY REGION ##
 ###################
 variable "region" {
-  default = "eu-west-1"
+  default = "eu-west-3"
 }
 
 ## Ingrese los dos primeros optetos del CIDR:
@@ -43,13 +43,13 @@ variable "cant_nat" {
 ## ADD TAGS ##
 ##############
 variable "project" {
-  default = "demo"
+  default = "test-demo2"
 }
 variable "env" {
   default = "dev"
 }
 variable "creator" {
-  default = "DevOps Team"
+  default = " Super Master DevOps Team"
 }
 variable "application" {
   default = "base"
