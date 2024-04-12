@@ -2,7 +2,7 @@
 ## REGION ##
 ############
 variable "region" {
-  default = "eu-west-1"
+  default = "eu-west-3"
 }
 
 variable "region_cloudfront" {
@@ -39,16 +39,16 @@ variable "private_zone" {
 ## ADD TAGS ##
 ##############
 variable "project" {
-  default = "demo"
+  default = "sol-demo"
 }
 variable "env" {
   default = "dev"
 }
 variable "creator" {
-  default = "DevOps Team"
+  default = "Master DevOps"
 }
 variable "application" {
-  default = "base"
+  default = "test"
 }
 variable "terraform" {
   default = "True"
