@@ -55,7 +55,7 @@ variable "env" {
 }
 variable "project" {
   description = "Project name"
-  default     = "cs"
+  default     = "cs2"
 }
 variable "creator" {
   description = "Deploymente by"
