@@ -99,7 +99,7 @@ resource "aws_s3_bucket_object" "upload_files" {
 
 resource "aws_launch_configuration" "as_conf" {
   name_prefix          = "${var.project}-${var.application}-${var.env}"
-  image_id             = "ami-058b1b7fe545997ae"
+  image_id             = "ami-0e09b452268c3d268"
   instance_type        = var.instance_type
   user_data            = file("userdata.sh")
   iam_instance_profile = aws_iam_instance_profile.app_profile.name
