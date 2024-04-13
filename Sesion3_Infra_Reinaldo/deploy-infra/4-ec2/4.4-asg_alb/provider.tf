@@ -3,7 +3,7 @@
 ############################
 terraform {
   backend "s3" {
-    bucket = "terraform-devops-dev"
+    bucket = "terraform-devops-dev-paris"
     key    = "demo/asg_alb_terraform.tfstate"
     region = "eu-west-1"
   }
@@ -12,7 +12,7 @@ terraform {
 data "terraform_remote_state" "vpc" {
   backend = "s3"
   config = {
-    bucket = "terraform-devops-dev"
+    bucket = "terraform-devops-dev-paris"
     key    = "demo/vpc_terraform.tfstate"
     region = "eu-west-1"
   }
@@ -21,7 +21,7 @@ data "terraform_remote_state" "vpc" {
 data "terraform_remote_state" "alb" {
   backend = "s3"
   config = {
-    bucket = "terraform-devops-dev"
+    bucket = "terraform-devops-dev-paris"
     key    = "demo/alb_terraform.tfstate"
     region = "eu-west-1"
   }
