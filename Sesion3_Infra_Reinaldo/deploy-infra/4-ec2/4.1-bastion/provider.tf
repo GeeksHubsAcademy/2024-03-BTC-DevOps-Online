@@ -1,17 +1,17 @@
 # REMOTE STATE CONFIGURE
 terraform {
   backend "s3" {
-    bucket = "terraform-devops-dev"
+    bucket = "terraform-devops-dev-paris"
     key    = "demo/bastion_terraform.tfstate"
-    region = "eu-west-1"
+    region = "eu-west-3"
   }
 }
 data "terraform_remote_state" "vpc" {
   backend = "s3"
   config = {
-    bucket = "terraform-devops-dev"
+    bucket = "terraform-devops-dev-paris"
     key    = "demo/vpc_terraform.tfstate"
-    region = "eu-west-1"
+    region = "eu-west-3"
   }
 }
 
@@ -29,7 +29,7 @@ terraform {
 
 # Configure the AWS Provider
 provider "aws" {
-  region = "us-east-1"
+  region = "eu-west-3"
 }
 
 # Using these data sources allows the configuration to be
