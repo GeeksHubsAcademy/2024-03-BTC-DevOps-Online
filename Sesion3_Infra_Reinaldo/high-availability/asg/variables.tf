@@ -109,13 +109,13 @@ variable "stickiness_enabled" {
 ## ASG CAPACITY ##
 ##################
 variable "max_size" {
-  default = "1"
+  default = "2"
 }
 variable "min_size" {
-  default = "1"
+  default = "2"
 }
 variable "desired_capacity" {
-  default = "1"
+  default = "2"
 }
 variable "health_check_grace_period" {
   default = "300"
