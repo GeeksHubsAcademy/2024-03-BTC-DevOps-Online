@@ -56,5 +56,3 @@ variable "creator" {
 variable "terraform" {
   default = "true"
 }
-
-
