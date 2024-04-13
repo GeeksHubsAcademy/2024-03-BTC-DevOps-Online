@@ -3,9 +3,9 @@
 ############################
 terraform {
   backend "s3" {
-    bucket = "terraform-devops-dev-paris"
+    bucket = "terraform-devops-dev"
     key    = "demo/acm_terraform.tfstate"
-    region = "eu-west-3"
+    region = "eu-west-1"
   }
 }
 ################################
@@ -21,7 +21,7 @@ terraform {
   }
 }
 provider "aws" {
-  region = "eu-west-3"
+  region = "eu-west-1"
 }
 
 # Using these data sources allows the configuration to be
