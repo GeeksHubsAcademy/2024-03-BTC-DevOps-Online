@@ -8,7 +8,7 @@ on:
   pull_request:
     branches: [ stg ]
     paths:
-    - "Sesion3_Infra_Reinaldo/deploy-infra/**"
+    - "Sesion3_Infra_Reinaldo/deploy-infra/2-vpc/**"
     - "!Sesion3_Infra_Reinaldo/deploy-infra/.github/**"
     - "!.github/**"
     - "!.gitignore"

@@ -8,7 +8,7 @@ on:
   push:
     branches: [ stg ]
     paths:
-    - "Sesion3_Infra_Reinaldo/deploy-infra/**"
+    - "Sesion3_Infra_Reinaldo/deploy-infra/4-ec2/4.3-alb/**"
     - "!Sesion3_Infra_Reinaldo/deploy-infra/.github/**"
     - "!.github/**"
     - "!.gitignore"
