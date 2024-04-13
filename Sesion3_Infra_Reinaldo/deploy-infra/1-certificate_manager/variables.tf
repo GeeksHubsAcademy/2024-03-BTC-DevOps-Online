@@ -2,7 +2,7 @@
 ## REGION ##
 ############
 variable "region" {
-  default = "eu-west-3"
+  default = "eu-west-1"
 }
 ##########################################################
 ## DEFINE THE NAME APROVISIONET FOR CERTIFICATE MANAGER ##
