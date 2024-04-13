@@ -83,7 +83,7 @@ variable "project" {
   default = "infraestructura"
 }
 variable "env" {
-  default = "training"
+  default = "stg"
 }
 variable "creator" {
   default = "Group-2"

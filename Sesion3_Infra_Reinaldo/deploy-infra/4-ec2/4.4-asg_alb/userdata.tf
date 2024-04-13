@@ -11,8 +11,8 @@ sudo status amazon-ssm-agent
 #######################################################
 echo "* * * * *  /opt/aws/aws-scripts-mon/mon-put-instance-data.pl --mem-util --disk-space-util --disk-path=/ --auto-scaling --from-cron" >> /var/spool/cron/root
 
-sed -i "s/RDSPASSWD/$(aws ssm get-parameter --name "/infraestructura/training/rds_passwd" --with-decryption --region eu-west-1 --query 'Parameter.Value' --output text)/g" "/var/www/wordpress/wp-config.php"
-sed -i "s/RDSHOST/$(aws ssm get-parameter --name "/infraestructura/training/rds_host" --with-decryption --region eu-west-1 --query 'Parameter.Value' --output text)/g" "/var/www/wordpress/wp-config.php"
+sed -i "s/RDSPASSWD/$(aws ssm get-parameter --name "/grupo3/training/rds_passwd" --with-decryption --region eu-west-3 --query 'Parameter.Value' --output text)/g" "/var/www/wordpress/wp-config.php"
+sed -i "s/RDSHOST/$(aws ssm get-parameter --name "/grupo3/training/rds_host" --with-decryption --region eu-west-3 --query 'Parameter.Value' --output text)/g" "/var/www/wordpress/wp-config.php"
 
 chown -R nginx:nginx /var/run/php-fpm/
 service nginx restart

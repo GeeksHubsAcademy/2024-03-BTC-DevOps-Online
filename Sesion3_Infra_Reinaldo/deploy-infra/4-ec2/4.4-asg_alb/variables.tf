@@ -2,11 +2,11 @@
 ## REGION ##
 ############
 variable "azs" {
-  default = ["eu-west-1a", "eu-west-1b"]
+  default = ["eu-west-3a", "eu-west-3b"]
   type    = list(any)
 }
 variable "region" {
-  default = "eu-west-1"
+  default = "eu-west-3"
 }
 ##################
 ## ASG CAPACITY ##
@@ -48,13 +48,11 @@ variable "env" {
   default = "training"
 }
 variable "project" {
-  default = "infraestructura"
+  default = "grupo3"
 }
 variable "creator" {
-  default = "Reinaldo Leon"
+  default = "grupo3"
 }
 variable "terraform" {
   default = "true"
 }
-
-
