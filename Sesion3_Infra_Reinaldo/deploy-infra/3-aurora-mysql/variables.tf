@@ -2,7 +2,7 @@
 ## DEPLOY REGION ##
 ###################
 variable "region" {
-  default = "eu-west-1"
+  default = "eu-west-3"
 }
 ############################
 ## DEPLOY AURORA INSTANCE ##
@@ -74,7 +74,7 @@ variable "env" {
 }
 variable "project" {
   description = "Project name"
-  default     = "infraestructura"
+  default     = "grupo3"
 }
 variable "application" {
   description = "Application name"
@@ -82,7 +82,7 @@ variable "application" {
 }
 variable "creator" {
   description = "Deploymente by"
-  default     = "Reinaldo leon"
+  default     = "grupo3"
 }
 variable "terraform" {
   description = "Terraform Template"
