@@ -22,7 +22,7 @@ on:
 jobs:
   # This workflow contains a single job called "build"
   terraform:
-    name: 'terraform plan deploy-infra/vpc'
+    name: 'terraform plan deploy-infra/2-vpc'
     # The type of runner that the job will run on
     runs-on: ubuntu-latest
 
@@ -52,19 +52,19 @@ jobs:
         with:
           tf_actions_version: 1.0.2
           tf_actions_subcommand: 'init'
-          tf_actions_working_dir: 'Sesion3_Infra_Reinaldo/deploy-infra/vpc'
+          tf_actions_working_dir: 'Sesion3_Infra_Reinaldo/deploy-infra/2-vpc'
           tf_actions_comment: true
       - name: 'Terraform fmt VPC'
         uses: hashicorp/terraform-github-actions@master
         with:
           tf_actions_version: 1.0.2
           tf_actions_subcommand: 'validate'
-          tf_actions_working_dir: 'Sesion3_Infra_Reinaldo/deploy-infra/vpc'
+          tf_actions_working_dir: 'Sesion3_Infra_Reinaldo/deploy-infra/2-vpc'
           tf_actions_comment: true
       - name: 'Terraform plan VPC'
         uses: hashicorp/terraform-github-actions@master
         with:
           tf_actions_version: 1.0.2
           tf_actions_subcommand: 'plan'
-          tf_actions_working_dir: 'Sesion3_Infra_Reinaldo/deploy-infra/vpc'
+          tf_actions_working_dir: 'Sesion3_Infra_Reinaldo/deploy-infra/2-vpc'
           tf_actions_comment: true
