@@ -2,13 +2,13 @@
 ## REGION ##
 ############
 variable "region" {
-  default = "eu-west-1"
+  default = "eu-west-3"
 }
 ####################
 ## AZs CONFIG ALB ##
 ####################
 variable "alb_azs" {
-  default = ["eu-west-1a", "eu-west-1b"]
+  default = ["eu-west-3a", "eu-west-3b"]
   type    = list(any)
 }
 #######################
@@ -121,7 +121,7 @@ variable "project" {
   default = "infraestructura"
 }
 variable "creator" {
-  default = "Reinaldo Leon"
+  default = "group-2"
 }
 variable "terraform" {
   default = "true"
