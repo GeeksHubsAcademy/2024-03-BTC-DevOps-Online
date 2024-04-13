@@ -2,15 +2,15 @@
 ## REGION ##
 ############
 variable "region" {
-  default = "eu-west-1"
+  default = "eu-west-3"
 }
 
 variable "s3_bucket" {
-  default = "terraform-devops-dev"
+  default = "terraform-devops-dev-paris"
 }
 
 variable "azs" {
-  default = ["eu-west-1a", "eu-west-1b"]
+  default = ["eu-west-3a", "eu-west-3b"]
   type    = list(any)
 }
 
@@ -18,7 +18,7 @@ variable "azs" {
 ## AZs CONFIG ALB ##
 ####################
 variable "alb_azs" {
-  default = ["eu-west-1a", "eu-west-1b"]
+  default = ["eu-west-3a", "eu-west-3b"]
   type    = list(any)
 }
 variable "dns_zone_id" {
@@ -133,7 +133,7 @@ variable "env" {
 }
 variable "project" {
   description = "Project name"
-  default     = "tupinflash"
+  default     = "mh"
 }
 variable "creator" {
   description = "Deploymente by"

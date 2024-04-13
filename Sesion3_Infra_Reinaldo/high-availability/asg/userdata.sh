@@ -28,7 +28,7 @@ sudo systemctl stop nginx
 rm -rf /usr/share/nginx/html
 mkdir -p /usr/share/nginx/html
 cd /usr/share/nginx/html
-aws s3 cp s3://terraform-devops-dev/ha/ha.zip .
+aws s3 cp s3://terraform-devops-dev-paris/ha/ha.zip .
 unzip ha.zip
 chown -R nginx:nginx ../../nginx
 
