@@ -74,7 +74,7 @@ variable "env" {
 }
 variable "project" {
   description = "Project name"
-  default     = "Grupo3"
+  default     = "grupo3"
 }
 variable "application" {
   description = "Application name"
@@ -82,7 +82,7 @@ variable "application" {
 }
 variable "creator" {
   description = "Deploymente by"
-  default     = "Grupo3"
+  default     = "grupo3"
 }
 variable "terraform" {
   description = "Terraform Template"
