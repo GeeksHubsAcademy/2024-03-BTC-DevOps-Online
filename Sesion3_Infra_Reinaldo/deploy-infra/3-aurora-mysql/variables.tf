@@ -78,7 +78,7 @@ variable "project" {
 }
 variable "application" {
   description = "Application name"
-  default     = "database"
+  default     = "db"
 }
 variable "creator" {
   description = "Deploymente by"
