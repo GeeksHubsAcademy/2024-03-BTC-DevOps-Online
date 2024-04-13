@@ -2,7 +2,7 @@
 ## DEPLOY REGION ##
 ###################
 variable "region" {
-  default = "eu-west-1"
+  default = "eu-west-3"
 }
 
 #######################
@@ -13,7 +13,7 @@ variable "vpc_cidr" {
   type    = string
 }
 variable "azs" {
-  default = ["eu-west-1a", "eu-west-1b", "eu-west-1c"]
+  default = ["eu-west-3a", "eu-west-3b", "eu-west-3c"]
   type    = list(any)
 }
 variable "vpc_subnet_cidr" {
@@ -86,7 +86,7 @@ variable "env" {
   default = "training"
 }
 variable "creator" {
-  default = "Reinaldo Leon"
+  default = "Group-2"
 }
 variable "terraform" {
   default = "true"
