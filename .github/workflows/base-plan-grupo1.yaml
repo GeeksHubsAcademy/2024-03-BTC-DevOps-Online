@@ -47,21 +47,21 @@ jobs:
       # Runs terraform stack VPC
       - name: 'Checkout'
         uses: actions/checkout@master
-      - name: 'Terraform Init VPC'
+      - name: 'Terraform Init Certificate Manager'
         uses: hashicorp/terraform-github-actions@master
         with:
           tf_actions_version: 1.0.2
           tf_actions_subcommand: 'init'
           tf_actions_working_dir: 'Sesion3_Infra_Reinaldo/deploy-infra/1-certificate_manager'
           tf_actions_comment: true
-      - name: 'Terraform fmt VPC'
+      - name: 'Terraform fmt Certificate Manager'
         uses: hashicorp/terraform-github-actions@master
         with:
           tf_actions_version: 1.0.2
           tf_actions_subcommand: 'validate'
           tf_actions_working_dir: 'Sesion3_Infra_Reinaldo/deploy-infra/1-certificate_manager'
           tf_actions_comment: true
-      - name: 'Terraform plan VPC'
+      - name: 'Terraform plan Certificate Manager'
         uses: hashicorp/terraform-github-actions@master
         with:
           tf_actions_version: 1.0.2
