@@ -25,7 +25,7 @@ resource "aws_iam_instance_profile" "app_profile" {
 }
 
 ##############################################
-##CREATE POLICY IAM FOR ROLE app INSTANCE## 
+##CREATE POLICY IAM FOR ROLE app INSTANCE##  
 ##############################################
 resource "aws_iam_policy" "app_policy" {
   name        = "${var.project}_policy"
