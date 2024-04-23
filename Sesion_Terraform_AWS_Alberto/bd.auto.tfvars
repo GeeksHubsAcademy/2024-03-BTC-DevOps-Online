@@ -1,0 +1,10 @@
+engine                    = "mysql"
+engine_version            = "5.7"
+zones_cluster             = ["eu-west-3a", "eu-west-3b"]
+database_cluster_name     = "defaultdb"
+master_username_cluster   = "root"
+master_password_cluster   = "cl4st3r-GeekS"
+backup_retention_period   = 3
+preferred_backup_window   = "04:00-05:00"
+db_cluster_instance_class = "db.t3.medium"
+allocated_storage_bd      = "10"
